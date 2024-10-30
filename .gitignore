@@ -1,0 +1,15 @@
+# Ignorar archivos de configuración de sistema operativo
+.DS_Store      # MacOS
+Thumbs.db      # Windows
+
+# Ignorar archivos generados por el entorno de desarrollo
+*.log          # Archivos de log
+*.tmp          # Archivos temporales
+
+# Ignorar carpetas específicas
+node_modules/  # Node.js
+dist/          # Carpeta de distribución
+
+# Ignorar archivos de configuración o scripts .sh
+.env           # Variables de entorno
+*.sh
