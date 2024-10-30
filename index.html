@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sitio de Películas</title>
+	<style>
+		.fixed-header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: #1e293b; 
+			z-index: 1000;
+		}
+		.content-wrapper {
+			padding-top: 60px; 
+		}
+	</style>
+</head>
+<body class="bg-slate-800">
+    <div class="fixed-header">
+        <div class="container mx-auto p-5">
+            <h2 class="text-white text-xl" id="contador">Página: 1</h2>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="container mx-auto p-5">
+            <div 
+                class="transition duration-0 xl:duration-150 md:duration-150 sm:duration-150 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-5" 
+                id="contenedor"
+            >
+                <!-- Aquí se generarán las tarjetas -->
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
